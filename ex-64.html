@@ -1,0 +1,58 @@
+<!-- محاسبه بی ام آی -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="ex-64.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h3>Calculate BMI</h3>
+
+        <div id="ht">
+            <label for="height">Enter the height in centimeters </label>
+            <input id="height" type="text">
+        </div>
+
+        <div id="wt">
+            <label for="weight">Enter the weight in kilograms </label>
+            <input id="weight" type="text">
+        </div>
+
+        <button onclick="result()">Computing</button>
+
+        <p id="demo"></p>
+
+        <p> Under Weight = Less than 18.6</p>
+
+        <p>Normal Range = 18.6 and 24.9</p>
+
+        <p>Overweight = Greater than 24.9</p>
+
+    </div>
+
+    <script>
+
+        function result() {
+
+            let height = +document.getElementById("height").value / 100;
+            let weight = +document.getElementById("weight").value;
+
+            let bmi = weight / (height **2);
+
+            document.getElementById("demo").innerHTML = "Your BMI is equal to " + bmi.toFixed(1);
+
+        }
+
+    </script>
+
+</body>
+
+</html>

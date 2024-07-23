@@ -1,0 +1,46 @@
+#container {
+    background-color: beige;
+    width: 32%;
+    margin-top: 14vh;
+    padding: 2%;
+    border: 2px dotted darkgray;
+    text-align: center;
+    margin-left: 32%;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-block-end: 40px;
+    color: darkblue;
+}
+
+#ht ,#wt {
+    margin: 15px;
+}
+
+input {
+    padding: 5px;
+    background-color: aliceblue;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: 1px solid darkgray;
+}
+
+input:hover {
+    box-shadow: 0px 0px 1px 1px rgb(212, 212, 212);
+}
+
+button {
+    padding: 6px;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#demo {
+    color: crimson;
+}
